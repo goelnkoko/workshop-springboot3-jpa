@@ -1,5 +1,6 @@
 package com.nkumbo.course.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.nkumbo.course.entities.pk.OrderItemPK;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
@@ -13,12 +14,13 @@ import java.util.Objects;
 public class OrderItem implements Serializable {
 
     @EmbeddedId
-    private OrderItemPK id;
+    private OrderItemPK id = new OrderItemPK();
 
     private Integer quantitiy;
     private Double price;
     public OrderItem(){}
 
+    @JsonIgnore
     public Order getOrder(){
         return id.getOrder();
     }
