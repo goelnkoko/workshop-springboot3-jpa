@@ -4,7 +4,7 @@
 # About the project
 This project consists of a back-end application built during the Java Complete course classes at [DevSuperior](https://www.udemy.com/course/java-curso-completo/)
 
-The application aims to introduce the concepts of Java Spring Boot.
+This is a web services application that aims to introduce the concepts of Java Spring Boot.
 
 ## Conceptual Model
 ![Modelo Conceitual](https://github.com/goelnkoko/imgs/blob/main/DomainModel.png)
